@@ -71,3 +71,16 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+
+##  cors 허용 세팅 
+
+const app = await NestFactory.create(AppModule, { cors: true });
+
+## hot reload 적용 (nest에서 이미 지원함)
+
+nest start --watch
+
+"start:dev" : "nest start --watch"
+
+## 
