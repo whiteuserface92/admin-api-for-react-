@@ -83,4 +83,10 @@ nest start --watch
 
 "start:dev" : "nest start --watch"
 
-## 
+## ConfigModule 다른 모듈에서 별도의 설정없이 환경변수의 사용이 가능합니다.
+
+imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+    })
+  ],
